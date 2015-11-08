@@ -1,9 +1,10 @@
-Asterisk-FreePBX-A2Billing
-Bundle installer for Asterisk, FreePBX, A2Billing in Debian based distros.
+- Asterisk-FreePBX-A2Billing
+
+- Bundle installer for Asterisk, FreePBX, A2Billing in Debian based distros.
 
 - Tested on Debian 8 - x86 & x64 using Vmware 11.
 
-1. Installation
+. Installation
 
 apt-get update
 apt-get -y upgrade
@@ -19,7 +20,7 @@ following dependencies first to be able to compile the kernel.
 
 apt-get -y install gcc make linux-headers-$(`uname` -r)
 
-2. Mysql database configuration for Asterisk & FreePBX
+. Mysql database configuration for Asterisk & FreePBX
 
 - During Mysql package installation you will be asked to enter the password for the root account. VERY IMPORTANT you need 
 to enter pbx4fun as the password. Do not change it to something else or you will find out sooner or later that things will
@@ -28,7 +29,7 @@ not work as intended.
 - During the installation process you will prompted to enter the Database info for Asterisk. If there is a value 
 already set between [] just press enter and continue. When asked for the database password type pbx4fun
 
-3. Mysql database configuration for A2BIlling
+. Mysql database configuration for A2BIlling
 
 - You will be asked to enter A2Billing database info, please enter the following
 
@@ -37,7 +38,7 @@ Hostname = 127.0.0.1      # Note: mysql will only allow local connections unless
 User = root
 passord = pbx4fun
 
-4. Miscellaneous
+. Miscellaneous
 
 - During the installtion process of Asterisk you will be presented with a menu. If you would like to have music on hold
 you need to make sure to enable it there, save changes and exit the menu to continue.
@@ -52,7 +53,7 @@ tell you the names of the two modules that needs to be loaded. Reboot and you ar
 - If the script is not of your liking feel free to modify it to your needs, this is a basic installer to integrate
 all 3 applications together using a single installer with the less possible user interaction.
 
-5. Login to FreePBX & A2Billing
+. Login to FreePBX & A2Billing
 
 FreePBX = http://yourlocalip/  - Note: You will be asked to create an username and password for the admin role
 
